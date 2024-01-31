@@ -26,13 +26,13 @@
             <p>Orario di arrivo: {{$train['orario_di_arrivo']}}</p>
             <p>Codice Treno: {{$train['codice_treno']}}</p>
             <p>Numero Carrozze: {{$train['numero_carrozze']}}</p>
-            <p>Il treno è in orario?: {{$train['in_orario']}}</p>
-            <p>Il treno è stato cancellato?: {{$train['cancellato']}}</p>
-           
+            <p>Il treno è in orario?: {{$train['in_orario']? 'SI' : 'NO' }}</p>
+            <p>Il treno è stato cancellato?: {{$train['cancellato']? 'SI' : 'NO' }}</p>
+
            </li>
        @endforeach
 </ul>
-       
+
     </div>
 
 </body>
